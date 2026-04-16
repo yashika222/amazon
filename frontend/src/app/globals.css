@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-100 text-[#0f1111] antialiased m-0 p-0 font-sans;
+  }
+}
+
+@layer components {
+  /* Common Amazon Elements */
+  .btn-yellow {
+    @apply bg-[#ffd814] hover:bg-[#f7ca00] text-[#0f1111] font-medium py-2 px-4 rounded-full shadow-sm transition-colors border border-[#fcd200] active:bg-[#f0b800];
+  }
+  .btn-orange {
+    @apply bg-[#ffa41c] hover:bg-[#fa8900] text-[#0f1111] font-medium py-2 px-4 rounded-full shadow-sm transition-colors border border-[#ff8f00] active:bg-[#ea7e00];
+  }
+  .nav-link {
+    @apply flex items-center justify-center p-2 rounded-sm border border-transparent hover:border-white cursor-pointer;
+  }
+}
